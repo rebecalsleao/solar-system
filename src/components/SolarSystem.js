@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 class SolarSystem extends Component {
   render() {
