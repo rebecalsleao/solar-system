@@ -7,14 +7,11 @@ class PlanetCard extends Component {
     return (
       <div data-testid="planet-card">
         <p data-testid="planet-name">{planetName}</p>
-        <p src="" alt='"Planeta" {planetName}'>
-          {planetImage}
-        </p>
+        <img src={planetImage} alt={`Planeta ${planetName}`} />
       </div>
     );
   }
 }
-PlanetCard.propTypes = { planetName: PropTypes.string.isRequired };
-// Title.propTypes = { headline: PropTypes.string.isRequired };
+PlanetCard.propTypes = { planetName: PropTypes.string.isRequired, planetImage: PropTypes.string.isRequired };
 
 export default PlanetCard;
